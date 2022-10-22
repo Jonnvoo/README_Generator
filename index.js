@@ -46,13 +46,13 @@ const genREADME = (data) => {
 ${licenseBadge(data.license)}
 
 ## Table of Contents 
-- [Project description](#description)
+- [Description](#description)
 - [Installation](#installation)
 - [Usage](#usage)
 - [Credits](#credits)
 - [Features](#features)
 - [Contribution](#contribution)
-- [Tests](#test)
+- [Test](#test)
 - [Questions](#questions)
 
 ## Description
@@ -160,7 +160,7 @@ inquirer
     .then(data => {
         //console.log(answers)
         const readmeWrite = genREADME(data);
-        fs.writeFile(`README.md`, readmeWrite, (err) => {
+        fs.writeFile(`READMEtest.md`, readmeWrite, (err) => {
             err ? console.log(err) : console.log("File was created successfully")
         })
     });
